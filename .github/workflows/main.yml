@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: first step Print Welcome Message
         run: echo "Hello this is first step"
+        
+      - name: checkout repository
+        uses: actions/checkout@v5.0.0
+
+      - name: print list of repository
+        run: ls -la
