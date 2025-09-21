@@ -1,0 +1,11 @@
+name: first workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  examole-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step Print Welcome Message
+        run: echo "Hello this is first step"
